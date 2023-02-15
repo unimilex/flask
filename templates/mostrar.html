@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Personalizacion de la experiencia de usuario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+</head>
+<body style="background-color:{{background_color}}">
+    <h3 class="is-size-3">Color de Fondo</h3>
+    <form action="{{url_for('cambiar_fondo')}}" method="post">
+        <label for="id">Color de fondo</label>
+        <input required type="color" class="input" name="fondo" id="fondo">
+        <button type="submit" class="button is-success mt-2">Cambiar</button>
+    </form>
+
+</body>
+</html>

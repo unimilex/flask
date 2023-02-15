@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block titulo %} Página de error {% endblock %}
+{% block contenido %}
+<header>
+    <h1>{{error}}</h1>
+    <img src="{{ url_for('static', filename='error.png')}}"/>
+</header>  
+{% endblock %}
